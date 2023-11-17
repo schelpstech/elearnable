@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="dashboard_header_title">
-                                <h4> Subjects for <?php echo $active_term['term'] ?></h4>
+                                <h4> Modules for <?php echo $active_term['term'] ?></h4>
                             </div>
                         </div>
 
@@ -73,7 +73,7 @@
                                     <div class="icon-wrapper-bg bg-danger"></div>
                                     <i class="ti-na text-danger"></i>
                                 </div>
-                                <div class="widget-numbers"><span>No Subject Allocated Yet</span></div>
+                                <div class="widget-numbers"><span>No Module Created Yet</span></div>
                             </div>
                         </div>';
             }

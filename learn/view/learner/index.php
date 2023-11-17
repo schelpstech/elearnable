@@ -48,11 +48,11 @@ include '../include/navigator.php';
                             <strong><small><?php echo $learner_profile['email'] ?? ' - '; ?></small></strong>
                         </div>
                         <div class="col-4 col-sm-4">
-                            <h6>Current Class</h6>
+                            <h6> Course Enrolled</h6>
                             <p><?php echo $learner_class['classname'] ?? ' - '; ?></p>
                         </div>
                         <div class="col-4 col-sm-4">
-                            <h6>Class Teacher</h6>
+                            <h6>Course Instructor</h6>
                             <p><?php echo $class_teacher['staffname'] ?? ' - '; ?></p>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ include '../include/navigator.php';
                     <div class="media_card_body">
                         <div class="media_card_list">
                             <div class="single_media_card">
-                                <span>Subjects</span>
+                                <span>Modules</span>
                                 <h3><?php echo $subject_count ?? 0; ?></h3>
                             </div>
                             <div class="single_media_card">
@@ -116,7 +116,7 @@ include '../include/navigator.php';
                                 <h3><?php echo $work_count ?? 0; ?></h3>
                             </div>
                             <div class="single_media_card">
-                                <span>School Fees</span>
+                                <span>Course Fees</span>
                                 <h3><?php echo $utility->money($bill_sum['schfee'] - $bill_discount['discount']) ?? 0; ?></h3>
                             </div>
                         </div>
