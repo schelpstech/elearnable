@@ -39,7 +39,7 @@
                                     while ($i < 12) {
                                         $i = $i + 1;
                                     ?>
-                                        <option value="Week <?php echo $i ?>">Unit <?php echo $i ?></option>
+                                        <option value="Unit <?php echo $i ?>">Unit <?php echo $i ?></option>
                                     <?php } ?>
                                 </select>
                             </div>
