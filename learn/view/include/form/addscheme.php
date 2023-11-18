@@ -36,7 +36,7 @@
                             </div>
                             <div class="input-group mb-3">
                                 <div class="input-group-text">
-                                    <label class="" for="inputGroupSelect02">Select Week</label>
+                                    <label class="" for="inputGroupSelect02">Select Unit</label>
                                 </div>
                                 <select class="form-select" id="week" tabindex="3" required="yes">
                                     <option value="">select</option>
@@ -45,7 +45,7 @@
                                     while ($i < 12) {
                                         $i = $i + 1;
                                     ?>
-                                        <option value="Week <?php echo $i ?>">Week <?php echo $i ?></option>
+                                        <option value="Week <?php echo $i ?>">Unit <?php echo $i ?></option>
                                     <?php } ?>
                                 </select>
                             </div>
