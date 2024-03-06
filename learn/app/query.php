@@ -644,15 +644,15 @@ if (isset($_SESSION['active']) && isset($_SESSION['user_type']) && $_SESSION['us
     $class_allocated = $model->getRows($tblName, $conditions);
 
     $tblName = 'lhpalloc';
-    $conditions = array(
-        'where' => array(
-            'staffid' => $_SESSION['active'],
-            'term' => $active_term['term'],
-        ),
-        'joinl' => array(
+    $conditions = [
+        'where' => [
+            'lhpalloc.staffid' => $_SESSION['active'],
+            'lhpalloc.term' => $active_term['term']
+        ],
+        'joinl' => [
             'lhpsubject' => ' on lhpalloc.sbjid = lhpsubject.sbjid ',
-        )
-    );
+        ]
+    ];
     $all_subject_allocated = $model->getRows($tblName, $conditions);
 
     //Learners Profile
